@@ -4,14 +4,14 @@ on:
   push:
     branches: 
       - main
-worflow_dispatch
+ workflow_dispatch:
 
 jobs:
   MyFirstJob:
-    runs-on: unbuntu-latest
+    runs-on: ubuntu-latest
 
     steps:
-      -  run: echo " :wave" Hello World!"
+      -  run: echo ":wave: Hello World!"
       - name: Checkout
         uses: actions/checkout@v4.2.2
       - name : List files in repository
