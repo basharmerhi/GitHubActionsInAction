@@ -11,12 +11,10 @@ jobs:
     runs-on: unbuntu-latest
 
     steps:
-      -  run: echo "Hello World!"
-
+      -  run: echo " :wave" Hello World!"
       - name: Checkout
         uses: actions/checkout@v4.2.2
-
       - name : List files in repository
-        run : |
-          echo "The repository ${{ github.repository }} contains the following 
-        -files:" tree
+      - run : |
+          echo "The repository ${{ github.repository }} contains the following -files:" 
+          tree
