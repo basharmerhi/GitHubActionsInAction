@@ -1,0 +1,14 @@
+name: My First workflow
+
+on:
+  push:
+    branches: 
+      - main
+worflow_dispatch
+
+jobs:
+  MyFirstJob:
+    runs-on: unbuntu-latest
+
+    steps:
+      -  run: echo "Hello World!"
